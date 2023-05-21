@@ -1,64 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    /* Hides the navigation menu */
-    .navbar {
-      display: none;
+  <title>External Landing Page</title>
+  <script>
+    function redirectToBlogger() {
+      window.location.href = "https://1990theme.blogger.com";
     }
-
-    /* Sets the background image to cover the full screen */
-    body {
-      margin: 0;
-      padding: 0;
-      background: url('https://i.etsystatic.com/9504739/r/il/35b164/1014873660/il_794xN.1014873660_g83k.jpg') no-repeat center center fixed;
-      background-size: cover;
-    }
-
-    /* Styles for the enter and exit buttons */
-    #button-container {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #enter-button,
-    #exit-button {
-      padding: 10px 20px;
-      background-color: #fff;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-      margin-right: 10px;
-    }
-
-    #enter-button:hover,
-    #exit-button:hover {
-      background-color: #000;
-      color: #fff;
-    }
-  </style>
+  </script>
 </head>
 <body>
-  <div id="button-container">
-    <a id="enter-button" href="https://rotheme.blogspot.com/">Enter</a>
-    <a id="exit-button" href="https://www.google.com/">Exit</a>
-  </div>
-
-  <script>
-    // Optional: Uncomment the following code to hide the navigation menu on page load
-    // document.addEventListener('DOMContentLoaded', function() {
-    //   document.querySelector('.navbar').style.display = 'none';
-    // });
-
-    // Optional: Uncomment the following code to show the navigation menu on exit button click
-    // function showMainBlog() {
-    //   document.querySelector('.navbar').style.display = 'block';
-    // }
-  </script>
+  <h1>Welcome to the External Landing Page!</h1>
+  <button onclick="redirectToBlogger()">Enter</button>
 </body>
 </html>
